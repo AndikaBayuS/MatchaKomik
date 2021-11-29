@@ -5,7 +5,7 @@ A super simple manga reader based on Vue3 and Bulma
 Clone the manga-api
 
 ```bash
-https://github.com/AndikaBayuS/manga-api/git
+https://github.com/AndikaBayuS/manga-api.git
 ```
 
 Install API dependecies (`yarn` or `npm install`)
