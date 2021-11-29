@@ -13,7 +13,7 @@ Install API dependecies (`yarn` or `npm install`)
 Start the development environment
 
 ```bash
-    npm run dev or npm run start
+npm run dev or npm run start
 ```
 
 # Usage (Client)
@@ -29,5 +29,6 @@ Install client dependecies (`yarn` or `npm install`)
 Start the development environment
 
 ```bash
-    npm run dev or npm run start
+npm run dev or npm run start
 ```
+Thanks to [@febryardiansyah](https://github.com/febryardiansyah) for his manga-api
