@@ -1,19 +1,19 @@
 <template>
-  <div class="container is-max-desktop">
-    <Navbar />
-    <article class="media">
-      <figure class="media-left">
-        <div class="image mr-3">
+  <Navbar />
+  <div class="container lg:px-56">
+    <div class="columns">
+      <div class="column is-one-quarter">
+        <div class="image is-2by3">
           <img :src="mangaDetail.thumb" />
         </div>
-      </figure>
-      <div class="media-content">
-        <div class="content">
-          <p>
-            <strong>{{ mangaDetail.title }}</strong>
-            <br />
-            {{ mangaDetail.synopsis }}
-          </p>
+      </div>
+      <div class="column">
+        <p>
+          <strong>{{ mangaDetail.title }}</strong>
+          <br />
+          {{ mangaDetail.synopsis }}
+        </p>
+        <div class="level is-mobile">
           <div class="level-left">
             <div v-for="genre in mangaDetail.genre_list" :key="genre">
               <span class="level-item tag is-dark mr-2">{{
@@ -23,10 +23,11 @@
           </div>
         </div>
       </div>
-    </article>
-    <div class="columns is-multiline mt-5">
+    </div>
+
+    <div class="columns is-multiline mt-5 is-mobile is-fluid">
       <div
-        class="column is-one-fifth"
+        class="column is-one-fifth-desktop is-one-third-mobile"
         v-for="(chapter, index) in mangaDetail.chapter"
         :key="index"
       >
@@ -62,7 +63,9 @@ export default {
     const route = useRoute();
     onMounted(() => {
       axios
-        .get(`http://127.0.0.1:3000/api/manga/detail/${route.params.endpoint}`)
+        .get(
+          `http://manga-api.teamatcha.my.id/api/manga/detail/${route.params.endpoint}`
+        )
         .then((result) => {
           mangaDetail.value = result.data;
         })

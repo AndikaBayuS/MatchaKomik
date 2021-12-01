@@ -1,6 +1,6 @@
 <template>
-  <div class="container is-max-desktop">
-    <Navbar />
+  <Navbar />
+  <div class="container mx-auto">
     <Manhwa />
   </div>
 </template>

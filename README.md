@@ -1,4 +1,4 @@
-A super simple manga reader based on Vue3 and Bulma
+A super simple manga reader based on Vue3 and Tailwind
 
 # Usage (API)
 

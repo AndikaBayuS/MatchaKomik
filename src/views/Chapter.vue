@@ -1,10 +1,10 @@
 <template>
-  <div class="container is-max-desktop">
-    <Navbar />
+  <Navbar />
+  <div class="container">
     <div v-for="(chapter, index) in mangaChapter.chapter_image" :key="index">
       <div class="level">
         <div class="level-item has-text-centered">
-          <img :src="chapter.chapter_image_link" />
+          <img class="image" :src="chapter.chapter_image_link" />
         </div>
       </div>
     </div>
@@ -25,7 +25,9 @@ export default {
     const route = useRoute();
     onMounted(() => {
       axios
-        .get(`http://127.0.0.1:3000/api/chapter/${route.params.endpoint}`)
+        .get(
+          `http://manga-api.teamatcha.my.id/api/chapter/${route.params.endpoint}`
+        )
         .then((result) => {
           mangaChapter.value = result.data;
         })
