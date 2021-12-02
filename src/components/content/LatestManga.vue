@@ -6,7 +6,7 @@
         <div v-for="(manga, index) in mangas.manga_list" :key="index">
           <router-link :to="{ name: 'manga.detail', params: { endpoint: manga.endpoint }}">
             <div class="rounded overflow-hidden shadow-md w-42 md:w-52 h-auto bg-gray-700">
-              <img class="w-full h-52" :src="manga.thumb" alt="Thumbnail">
+              <img class="w-full h-52" :src="manga.thumb_potrait" alt="Thumbnail">
               <div class="px-4 pt-4">
                 <div class="font-bold text-base mb-2 truncate overflow-ellipsis text-white">{{manga.title}}</div>
               </div>

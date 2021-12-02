@@ -6,7 +6,7 @@
         <div v-for="(manhua, index) in manhuas.manga_list" :key="index">
           <router-link :to="{ name: 'manga.detail', params: { endpoint: manhua.endpoint }}">
             <div class="rounded overflow-hidden shadow-md w-42 md:w-52 h-auto bg-gray-700">
-              <img class="w-full h-52" :src="manhua.thumb" alt="Thumbnail">
+              <img class="w-full h-52" :src="manhua.thumb_potrait" alt="Thumbnail">
               <div class="px-4 pt-4">
                 <div class="font-bold text-base mb-2 truncate overflow-ellipsis text-white">{{manhua.title}}</div>
               </div>

@@ -81,4 +81,8 @@ export default defineComponent({
 .carousel__pagination-button--active {
   background-color: white;
 }
+
+.carousel__slide--visible {
+  transform: rotateY(0);
+}
 </style>
