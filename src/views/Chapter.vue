@@ -1,6 +1,6 @@
 <template>
   <Navbar />
-  <div class="container">
+  <div class="container mx-auto xl:px-56">
     <div v-for="(chapter, index) in mangaChapter.chapter_image" :key="index">
       <div class="level">
         <div class="level-item has-text-centered">

@@ -8,12 +8,12 @@
             <img class="w-full h-52" :src="recommended.thumb" alt="Thumbnail">
               <router-link :to="{ name: 'manga.detail', params: { endpoint: recommended.endpoint }}">
                 <div class="px-4 pt-4">
-                  <div class="font-bold text-base mb-2 truncate overflow-ellipsis text-white">{{recommended.title}}</div>
+                  <div class="font-bold text-xs mb-2 truncate overflow-ellipsis text-white">{{recommended.title}}</div>
                 </div>
               </router-link>
-            <div class="px-4 pb-2">
-              <span class="inline-block bg-gray-200 rounded-full px-2 py-1 text-xs font-semibold text-gray-700 mr-2 mb-2">{{recommended.chapter}}</span>
-              <span class="inline-block bg-red-500 rounded-full px-2 py-1 text-xs font-semibold text-white mr-2 mb-2">NEW!</span>
+            <div class="px-4 pb-2 inline-block">
+              <span class="inline-block bg-gray-200 rounded-full px-2 py-1 text-xs font-semibold text-gray-700 mr-1 mb-2">{{recommended.chapter}}</span>
+              <span class="inline-block bg-red-500 rounded-full px-2 py-1 text-xs font-semibold text-white mb-2">UP!</span>
             </div>
           </div>
         </Slide>
