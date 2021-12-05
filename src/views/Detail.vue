@@ -1,7 +1,7 @@
 <template>
   <Navbar />
   <div class="container mx-auto xl:px-56">
-    <div class="max-w-md bg-gray-700 rounded-xl shadow-md overflow-hidden md:max-w-full mt-5">
+    <div class="max-w-md bg-gray-700 rounded shadow-md overflow-hidden md:max-w-full mt-5">
       <div class="md:flex">
         <div class="p-12 md:p-2 md:flex-shrink-0">
           <img class="w-full object-cover md:w-48 rounded" :src="mangaDetail.thumb" alt="Thumbnail">
@@ -33,7 +33,7 @@
       </div>
     </div>
 
-    <div class="bg-gray-700 rounded-xl shadow-md overflow-hidden md:max-w-full mt-5">
+    <div class="bg-gray-700 rounded shadow-md overflow-hidden md:max-w-full mt-5">
       <div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 2xl:grid-cols-5 gap-3 p-5">
           <div v-for="(chapter, index) in mangaDetail.chapter" :key="index">
             <div class="p-4 bg-gray-600 rounded">
