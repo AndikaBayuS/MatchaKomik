@@ -2,10 +2,8 @@
   <Navbar />
   <div class="container mx-auto xl:px-56">
     <div v-for="(chapter, index) in mangaChapter.chapter_image" :key="index">
-      <div class="level">
-        <div class="level-item has-text-centered">
-          <img class="image" :src="chapter.chapter_image_link" />
-        </div>
+      <div class="flex justify-center">
+          <img :src="chapter.chapter_image_link" />
       </div>
     </div>
   </div>

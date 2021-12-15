@@ -2,7 +2,7 @@
   <div class="container xl:px-56">
     <section class="my-5 px-3 md:p-0">
       <h4 class="text-lg font-semibold mb-5 text-white">MANHWA LIST</h4>
-      <div class="grid lg:grid-cols-4 md:grid-cols-3 sm:grid-cols-3 grid-cols-2 gap-4">
+      <div class="grid 2xl:grid-cols-5 lg:grid-cols-4 md:grid-cols-3 sm:grid-cols-3 grid-cols-2 gap-4">
         <div v-for="(manhwa, index) in manhwas.manga_list" :key="index">
           <router-link :to="{ name: 'manga.detail', params: { endpoint: manhwa.endpoint }}">
             <div class="rounded overflow-hidden shadow-md w-42 md:w-52 h-auto bg-gray-700">

@@ -4,7 +4,7 @@
       <h4 class="text-lg font-semibold mb-5 text-white">TOP COMICS</h4>
       <Carousel :itemsToShow="2" :breakpoints="breakpoints" :transition="100">
         <Slide v-for="(recommended, index) in recommendeds.manga_list" :key="index">
-          <div class="rounded overflow-hidden shadow-md w-42 md:w-48 h-auto bg-gray-700 text-left mx-2">
+          <div class="rounded overflow-hidden shadow-md w-48 h-auto bg-gray-700 text-left mx-2">
             <img class="w-full h-52" :src="recommended.thumb" alt="Thumbnail">
               <router-link :to="{ name: 'manga.detail', params: { endpoint: recommended.endpoint }}">
                 <div class="px-4 pt-4">
@@ -13,7 +13,6 @@
               </router-link>
             <div class="px-4 pb-2 inline-block">
               <span class="inline-block bg-gray-200 rounded-full px-2 py-1 text-xs font-semibold text-gray-700 mr-1 mb-2">{{recommended.chapter}}</span>
-              <span class="inline-block bg-red-500 rounded-full px-2 py-1 text-xs font-semibold text-white mb-2">UP!</span>
             </div>
           </div>
         </Slide>
