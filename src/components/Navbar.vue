@@ -70,6 +70,7 @@ export default {
     return {
       isActive: false,
       showNavbar: true,
+      search: ""
     };
   },
   setup() {
