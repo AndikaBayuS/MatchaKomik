@@ -26,6 +26,11 @@ const routes = [
     name: "manga.chapter",
     component: () => import("../views/Chapter.vue"),
   },
+  {
+    path: "/search/:key",
+    name: "manga.search",
+    component: () => import("../views/SearchList.vue"),
+  },
 ];
 
 const router = createRouter({
