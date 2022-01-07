@@ -22,19 +22,27 @@
       </div>
     </section>
   </div>
+  <PaginationManhua />
 </template>
 <script>
 import { onMounted, ref } from "vue";
+import { useRoute } from "vue-router";
 import axios from "axios";
+
+import PaginationManhua from "../pagination/PaginationManhua.vue"
 
 export default {
   name: "Manhua",
+  components: {
+    PaginationManhua
+  },
   setup() {
     let manhuas = ref([]);
+    const route = useRoute();
 
     onMounted(() => {
       axios
-        .get("http://manga-api.teamatcha.my.id/api/manhua/1")
+        .get(`http://manga-api.teamatcha.my.id/api/manhua/${route.params.page}`)
         .then((result) => {
           manhuas.value = result.data;
         })

@@ -7,13 +7,18 @@ const routes = [
     component: () => import("../views/Home.vue"),
   },
   {
-    path: "/manhwa",
-    name: "manhwa.home",
+    path: "/release/:page",
+    name: "release.page",
+    component: () => import("../views/ReleaseList.vue"),
+  },
+  {
+    path: "/manhwa/:page",
+    name: "manhwa.page",
     component: () => import("../views/ManhwaList.vue"),
   },
   {
-    path: "/manhua",
-    name: "manhua.home",
+    path: "/manhua/:page",
+    name: "manhua.page",
     component: () => import("../views/ManhuaList.vue"),
   },
   {

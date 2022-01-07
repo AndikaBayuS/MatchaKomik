@@ -22,19 +22,27 @@
       </div>
     </section>
   </div>
+  <PaginationManhwa />
 </template>
 <script>
 import { onMounted, ref } from "vue";
+import { useRoute } from "vue-router";
 import axios from "axios";
+
+import PaginationManhwa from "../pagination/PaginationManhwa.vue"
 
 export default {
   name: "Manhwa",
+  components: {
+    PaginationManhwa
+  },
   setup() {
     let manhwas = ref([]);
+    const route = useRoute();
 
     onMounted(() => {
       axios
-        .get("http://manga-api.teamatcha.my.id/api/manhwa/1")
+        .get(`http://manga-api.teamatcha.my.id/api/manhwa/${route.params.page}`)
         .then((result) => {
           manhwas.value = result.data;
         })
