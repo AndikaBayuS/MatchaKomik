@@ -1,6 +1,6 @@
 <template>
   <Navbar />
-    <div class="container xl:px-56">
+    <div class="container xl:px-56 mx-auto">
       <section class="my-5 px-3 md:p-0">
         <h4 class="text-lg font-semibold mb-5 text-white">NEW RELEASE</h4>
         <div class="grid 2xl:grid-cols-5 lg:grid-cols-4 md:grid-cols-3 sm:grid-cols-3 grid-cols-2 gap-4">
@@ -22,8 +22,8 @@
           </div>
         </div>
       </section>
+      <PaginationRelease />
     </div>
-    <PaginationRelease />
 </template>
 <script>
 import { onMounted, ref } from "vue";
