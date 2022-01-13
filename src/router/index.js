@@ -24,7 +24,7 @@ const routes = [
   {
     path: "/detail/:endpoint",
     name: "manga.detail",
-    component: () => import("../views/Detail.vue"),
+    component: () => import("../views/DetailManga.vue"),
   },
   {
     path: "/chapter/:endpoint",

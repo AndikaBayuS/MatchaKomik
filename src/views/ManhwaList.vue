@@ -1,21 +1,22 @@
 <template>
   <Navbar />
-  <div class="container mx-auto">
+  <div class="container xl:px-56 mx-auto">
     <Search />
-    <Manhwa />
+    <section class="my-5 px-3 md:p-0">
+      <h4 class="text-lg font-semibold mb-5 text-white">MANHWA LIST</h4>
+      <Suspense>
+        <template #default>
+          <Manhwa />
+        </template>
+        <template #fallback>
+          <Loading />
+        </template>
+      </Suspense>
+    </section>
   </div>
 </template>
 <script>
-import Navbar from "../components/Navbar.vue";
-import Search from "../components/Search.vue";
-import Manhwa from "../components/content/Manhwa.vue";
-
 export default {
   name: "ManhwaList",
-  components: {
-    Navbar,
-    Search,
-    Manhwa,
-  },
 };
 </script>

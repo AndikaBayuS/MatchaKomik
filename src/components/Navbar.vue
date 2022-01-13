@@ -74,19 +74,7 @@ export default {
     };
   },
   setup() {
-    let genres = ref([]);
-    onMounted(() => {
-      axios
-        .get("http://manga-api.teamatcha.my.id/api/genres")
-        .then((result) => {
-          genres.value = result.data;
-        })
-        .catch((err) => {
-          console.log(err.response);
-        });
-    });
     return {
-      genres,
       navigation
     };
   },

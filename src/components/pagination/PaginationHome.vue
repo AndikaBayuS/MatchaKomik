@@ -1,6 +1,6 @@
 <template>
     <div class="container xl:px-56 flex justify-center">
-        <div class="bg-gray-700 p-2 mb-2 rounded">
+        <div class="bg-gray-700 p-2 mt-3 rounded">
             <VPagination
                 v-model="page"
                 :pages="99"

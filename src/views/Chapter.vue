@@ -12,12 +12,8 @@
 import axios from "axios";
 import { onMounted, ref } from "vue";
 import { useRoute } from "vue-router";
-import Navbar from "../components/Navbar.vue";
 
 export default {
-  components: {
-    Navbar,
-  },
   setup() {
     let mangaChapter = ref([]);
     const route = useRoute();

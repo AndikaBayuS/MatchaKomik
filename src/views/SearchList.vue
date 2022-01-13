@@ -24,19 +24,12 @@
 </template>
 
 <script>
+import axios from "axios";
 import { onMounted, ref } from "vue";
 import { useRoute } from "vue-router";
-import axios from "axios";
-
-import Navbar from '../components/Navbar.vue'
-import Search from '../components/Search.vue'
 
 export default {
   name: "SearchList",
-  components: {
-    Navbar,
-    Search
-  },
   setup() {
     let mangas = ref([]);
     const route = useRoute();
