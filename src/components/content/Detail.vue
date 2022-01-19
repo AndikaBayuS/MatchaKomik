@@ -17,7 +17,7 @@
                 <DisclosureButton
                 class="flex justify-between max-w-full px-4 py-2 text-md font-medium text-left bg-gray-600 rounded-lg focus:outline-none focus-visible:ring focus-visible:ring-purple-500 focus-visible:ring-opacity-75"
                 >
-                <p class="text-white font-semibold">Sysnopsis</p>
+                <p class="text-white">Sinopsis</p>
                 <ChevronDownIcon
                     :class="open ? 'transform rotate-180' : ''"
                     class=" ml-5 w-5 h-5 text-white"
