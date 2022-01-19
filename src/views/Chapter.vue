@@ -7,7 +7,6 @@
       </div>
     </div>
   </div>
-  <Footer />
 </template>
 <script>
 import axios from "axios";
