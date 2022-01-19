@@ -10,6 +10,7 @@
       </template>
     </Suspense>
   </div>
+  <Footer />
 </template>
 
 <script>

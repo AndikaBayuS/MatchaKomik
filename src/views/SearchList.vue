@@ -21,6 +21,7 @@
       </div>
     </section>
   </div>
+  <Footer />
 </template>
 
 <script>
