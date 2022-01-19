@@ -3,7 +3,7 @@
   <div class="container xl:px-56 mx-auto">
     <Search />
     <section class="my-5 px-3 md:p-0">
-      <h4 class="text-lg font-semibold mb-5 text-white">SEARCH</h4>
+      <h4 class="text-lg font-semibold mb-5 text-white">HASIL PENCARIAN</h4>
       <div class="grid 2xl:grid-cols-5 lg:grid-cols-4 md:grid-cols-3 sm:grid-cols-3 grid-cols-2 gap-4">
         <div v-for="(manga, index) in mangas.manga_list" :key="index">
           <router-link :to="{ name: 'manga.detail', params: { endpoint: manga.endpoint }}">

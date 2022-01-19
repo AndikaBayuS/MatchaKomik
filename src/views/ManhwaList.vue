@@ -3,7 +3,7 @@
   <div class="container xl:px-56 mx-auto">
     <Search />
     <section class="my-5 px-3 md:p-0">
-      <h4 class="text-lg font-semibold mb-5 text-white">MANHWA LIST</h4>
+      <h4 class="text-lg font-semibold mb-5 text-white">MANHWA</h4>
       <Suspense>
         <template #default>
           <Manhwa />
