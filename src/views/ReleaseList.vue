@@ -13,6 +13,7 @@
       </Suspense>
     </section>
   </div>
+  <Footer />
 </template>
 <script>
 export default {
