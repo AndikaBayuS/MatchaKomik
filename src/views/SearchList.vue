@@ -37,7 +37,7 @@ export default {
 
     onMounted(() => {
       axios
-        .get(`http://manga-api.teamatcha.my.id/api/search/${route.params.key}`)
+        .get(`http://127.0.0.1:3000/api/search/${route.params.key}`)
         .then((result) => {
           mangas.value = result.data;
         })

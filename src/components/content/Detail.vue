@@ -71,7 +71,7 @@ export default {
 
     await axios
     .get(
-      `http://manga-api.teamatcha.my.id/api/manga/detail/${route.params.endpoint}`
+      `http://127.0.0.1:3000/api/manga/detail/${route.params.endpoint}`
     )
     .then((result) => {
       mangaDetail.value = result.data;

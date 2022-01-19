@@ -33,7 +33,7 @@ export default {
     const route = useRoute();
 
     await axios
-    .get(`http://manga-api.teamatcha.my.id/api/manga/page/${route.params.page}`)
+    .get(`http://127.0.0.1:3000/api/manga/page/${route.params.page}`)
     .then((result) => {
         mangas.value = result.data;
     })

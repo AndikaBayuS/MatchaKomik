@@ -53,7 +53,7 @@ export default defineComponent({
     let recommendeds = ref([]);
 
     await axios
-    .get("http://manga-api.teamatcha.my.id/api/manga/popular")
+    .get("http://127.0.0.1:3000/api/manga/popular")
     .then((result) => {
       recommendeds.value = result.data;
     })

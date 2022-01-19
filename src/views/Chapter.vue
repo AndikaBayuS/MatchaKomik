@@ -20,7 +20,7 @@ export default {
     onMounted(() => {
       axios
         .get(
-          `http://manga-api.teamatcha.my.id/api/chapter/${route.params.endpoint}`
+          `http://127.0.0.1:3000/api/chapter/${route.params.endpoint}`
         )
         .then((result) => {
           mangaChapter.value = result.data;

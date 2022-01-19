@@ -31,7 +31,7 @@ export default {
     let mangas = ref([]);
 
     await axios 
-    .get("http://manga-api.teamatcha.my.id/api/manga/page/1")
+    .get("http://127.0.0.1:3000/api/manga/page/1")
     .then((result) => {
       mangas.value = result.data;
     })
